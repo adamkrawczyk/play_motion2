@@ -101,14 +101,14 @@ private:
     const JointTrajectory & trajectory);
 
   Result send_trajectories(
-    const MotionInfo & info,
-    const JointTrajectory & planned_approach,
-    std::list<FollowJTGoalHandleFutureResult> & futures_list,
-    double & final_motion_time);
+    const std::string & motion_key,
+    const ControllerTrajectories & ctrl_trajectories,
+    std::list<FollowJTGoalHandleFutureResult> & futures_list);
 
   Result wait_for_results(
-    std::list<FollowJTGoalHandleFutureResult> & futures_list,
-    const double motion_time);
+    const std::vector<std::string> & motion_controllers,
+    const double motion_time,
+    std::list<FollowJTGoalHandleFutureResult> & futures_list);
 
   std::vector<MoveGroupInterfacePtr> get_valid_move_groups(const JointNames & joints) const;
   JointNames get_planned_joints(const JointNames & joints) const;
