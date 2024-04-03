@@ -2,6 +2,16 @@
 Changelog for package play_motion2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+Forthcoming
+-----------
+* Fix comment
+* Add test deactivating unused controller while executing a motion
+* Fail on controller change only if it's used by the running motion
+* Cancel goals on failure
+* Change logging level for 'Motion failed' message
+* Invert loop to check changing controller properly
+* Contributors: Noel Jimenez
+
 1.0.1 (2024-03-07)
 ------------------
 * Rename method perform_unplanned_motion to perform_motion
