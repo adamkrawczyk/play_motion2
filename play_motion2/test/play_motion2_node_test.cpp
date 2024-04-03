@@ -253,7 +253,7 @@ void PlayMotion2NodeTest::execute_motion_deactivating_controller_1(
   const std::string & motion_key,
   const rclcpp_action::ResultCode & code) const
 {
-  // create and send goalexecute_failing_motion
+  // create and send goal
   FutureGoalHandlePM2 goal_handle_future;
   send_pm2_goal(motion_key, goal_handle_future);
 
