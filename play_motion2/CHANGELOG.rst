@@ -2,8 +2,8 @@
 Changelog for package play_motion2
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+1.1.0 (2024-04-03)
+------------------
 * Fix comment
 * Add test deactivating unused controller while executing a motion
 * Fail on controller change only if it's used by the running motion
